@@ -1,1 +1,180 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ghost - Un sabor paranormal</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <main>
+        <section id="hero">
+            <div class="logo">
+                <img src="assets/logo.png" alt="Ghost Logo" class="logo-img">
+                <button class="menu-btn">
+                    <span class="menu-icon"></span>
+                </button>
+            </div>
+            <div class="vertical-menu">
+                <ul>
+                    <li><a href="#menu">Menú</a></li>
+                    <li><a href="#promociones">Promociones</a></li>
+                    <li><a href="#ubicaciones">Ubicaciones</a></li>
+                    <li><a href="#contacto">Contacto</a></li>
+                </ul>
+            </div>
+            <div class="hero-content">
+                <h1>¡Bienvenido a Ghost!</h1>
+                <p>La mejor comida rápida de Chile</p>
+                <a href="#menu" class="cta-button">Ver Menú</a>
+            </div>
+        </section>
 
+        <section id="menu" class="menu-section">
+            <h2>Nuestro Menú</h2>
+            <div class="menu-categories">
+                <button class="category-btn active" data-category="all">Todo</button>
+                <button class="category-btn" data-category="hamburguesas">Hamburguesas</button>
+                <button class="category-btn" data-category="completos">Completos</button>
+                <button class="category-btn" data-category="bebidas">Bebidas</button>
+                <button class="category-btn" data-category="postres">Postres</button>
+            </div>
+            <div class="menu-grid">
+                <div class="menu-item hamburguesas">
+                    <img src="assets/hamburguesa1.jpg" alt="Deluxe Ghost">
+                    <div class="menu-item-content">
+                        <h3>PICO</h3>
+                        <p>XD</p>
+                        <span class="price">$5.990</span>
+                        <button class="add-to-cart">Añadir al Carrito</button>
+                    </div>
+                </div>
+                <div class="menu-item completos">
+                    <img src="assets/completo1.jpg" alt="Completo Ghost">
+                    <div class="menu-item-content">
+                        <h3>TULA</h3>
+                        <p>XD</p>
+                        <span class="price">$4.990</span>
+                        <button class="add-to-cart">Añadir al Carrito</button>
+                    </div>
+                </div>
+                <div class="menu-item bebidas">
+                    <img src="assets/bebida1.jpg" alt="Bebida Ghost">
+                    <div class="menu-item-content">
+                        <h3>PENE</h3>
+                        <p>XD</p>
+                        <span class="price">$1.990</span>
+                        <button class="add-to-cart">Añadir al Carrito</button>
+                    </div>
+                </div>
+                <div class="menu-item postres">
+                    <img src="assets/postre1.jpg" alt="Postre Ghost">
+                    <div class="menu-item-content">
+                        <h3>VAGINA</h3>
+                        <p>DX</p>
+                        <span class="price">$2.990</span>
+                        <button class="add-to-cart">Añadir al Carrito</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="promociones" class="promociones-section">
+            <h2>Promociones</h2>
+            <div class="promociones-container">
+                <div class="promocion">
+                    <div class="promocion-content">
+                        <h3>Combo Familiar</h3>
+                        <p>¡20% de descuento en todos los combos!</p>
+                        <span class="highlight">¡Oferta válida hasta el 31/12/2025!</span>
+                    </div>
+                </div>
+                <div class="promocion">
+                    <div class="promocion-content">
+                        <h3>Happy Hour</h3>
+                        <p>Descuentos especiales de 16:00 a 19:00</p>
+                        <span class="highlight">¡2x1 en hamburguesas!</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="ubicaciones" class="ubicaciones-section">
+            <h2>Nuestras Ubicaciones</h2>
+            <div class="ubicaciones-container">
+                <div class="ubicacion">
+                    <h3>Monte Patria</h3>
+                    <p>Calle Principal 123</p>
+                    <p>Teléfono: +56 9 1234 5678</p>
+                    <p>Horario: 10:00 - 22:00</p>
+                </div>
+                <div class="ubicacion">
+                    <h3>La Serena</h3>
+                    <p>Calle Central 456</p>
+                    <p>Teléfono: +56 9 2345 6789</p>
+                    <p>Horario: 10:00 - 22:00</p>
+                </div>
+                <div class="ubicacion">
+                    <h3>Coquimbo</h3>
+                    <p>Calle Comercial 789</p>
+                    <p>Teléfono: +56 9 3456 7890</p>
+                    <p>Horario: 10:00 - 22:00</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="contacto" class="contacto-section">
+            <h2>Contacto</h2>
+            <div class="contacto-container">
+                <div class="contacto-info">
+                    <div class="contacto-detalle">
+                        <h3>Reserva tu pedido</h3>
+                        <p>Teléfono: +56 9 1234 5678</p>
+                        <p>Email: info@ghost.cl</p>
+                    </div>
+                    <div class="contacto-detalle">
+                        <h3>Horarios</h3>
+                        <p>Lunes a Domingo: 10:00 - 22:00</p>
+                    </div>
+                </div>
+                <div class="contacto-form">
+                    <form id="contact-form">
+                        <input type="text" placeholder="Nombre" required>
+                        <input type="email" placeholder="Email" required>
+                        <textarea placeholder="Mensaje" required></textarea>
+                        <button type="submit" class="submit-btn">Enviar Mensaje</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Síguenos</h3>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                </div>
+            </div>
+            <div class="footer-section">
+                <h3>Información</h3>
+                <ul>
+                    <li><a href="#">Términos y Condiciones</a></li>
+                    <li><a href="#">Política de Privacidad</a></li>
+                    <li><a href="#">Trabaja con Nosotros</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Ghost</h3>
+                <p>&copy; 2025 Ghost. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,4 +1,20 @@
 document.addEventListener('DOMContentLoaded', function() {
+    // Funcionalidad del accordion
+    const accordionHeaders = document.querySelectorAll('.accordion-header');
+    
+    accordionHeaders.forEach(header => {
+        header.addEventListener('click', function() {
+            // Toggle active class on header
+            this.classList.toggle('active');
+            
+            // Get the content panel
+            const content = this.nextElementSibling;
+            
+            // Toggle active class on content
+            content.classList.toggle('active');
+        });
+    });
+
     // Animación hero
     const hero = document.getElementById('hero');
     const observer = new IntersectionObserver(
@@ -20,18 +36,18 @@ document.addEventListener('DOMContentLoaded', function() {
 
     observer.observe(hero);
 
-    // Funcionalidad del menú vertical
+    // Funcionalidad del menú deslizante
     const menuBtn = document.querySelector('.menu-btn');
-    const verticalMenu = document.querySelector('.vertical-menu');
+    const sidebar = document.querySelector('.sidebar');
     
     menuBtn.addEventListener('click', () => {
-        verticalMenu.classList.toggle('active');
+        sidebar.classList.toggle('active');
     });
 
     // Cerrar menú al hacer clic fuera
     document.addEventListener('click', (e) => {
-        if (!menuBtn.contains(e.target) && !verticalMenu.contains(e.target)) {
-            verticalMenu.classList.remove('active');
+        if (!menuBtn.contains(e.target) && !sidebar.contains(e.target)) {
+            sidebar.classList.remove('active');
         }
     });
 
@@ -73,6 +89,53 @@ document.addEventListener('DOMContentLoaded', function() {
 
     window.addEventListener('scroll', animateOnScroll);
     animateOnScroll(); // Llamar una vez al cargar la página
+
+    // Función para mostrar/ocultar la barra de navegación
+    function handleNavbarVisibility() {
+        const navbar = document.querySelector('.top-bar');
+        const hero = document.getElementById('hero');
+        
+        // Obtener la posición y tamaño del hero
+        const heroRect = hero.getBoundingClientRect();
+        const windowHeight = window.innerHeight;
+        
+        // Solo mostrar la barra cuando el hero salga completamente de la vista
+        if (heroRect.bottom <= 0) {
+            navbar.classList.add('visible');
+        } else {
+            navbar.classList.remove('visible');
+        }
+    }
+
+    // Función para manejar el menú móvil
+    function handleMobileMenu() {
+        // Solo seleccionar el botón de menú dentro del hero
+        const menuBtn = document.querySelector('#hero .menu-btn');
+        const mobileMenu = document.querySelector('.mobile-menu');
+        
+        if (menuBtn) {
+            menuBtn.addEventListener('click', (e) => {
+                e.stopPropagation(); // Evitar que el evento suba al documento
+                mobileMenu.classList.toggle('active');
+            });
+        }
+
+        // Cerrar el menú si se hace clic fuera de él
+        document.addEventListener('click', (e) => {
+            if (menuBtn && !menuBtn.contains(e.target) && !mobileMenu.contains(e.target)) {
+                mobileMenu.classList.remove('active');
+            }
+        });
+    }
+
+    // Evento de scroll
+    window.addEventListener('scroll', handleNavbarVisibility);
+
+    // Inicializar la visibilidad de la barra
+    handleNavbarVisibility();
+
+    // Inicializar el menú móvil
+    handleMobileMenu();
 
     // Formulario de contacto
     const contactForm = document.getElementById('contact-form');

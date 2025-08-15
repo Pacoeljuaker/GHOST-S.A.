@@ -3,21 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ghost - Un sabor paranormal</title>
+    <title>Menú - Ghost</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <link rel="icon" type="image/png" href="assets/favicon.png">
 </head>
-<body>
-    <div class="menu-wrapper">
-        <div class="menu-btn-container">
-            <button class="menu-btn">
-                <span class="menu-icon"></span>
-            </button>
-        </div>
-    </div>
+<body class="menu-page">
     <nav class="top-bar">
-        <nav class="sidebar">
+        <div class="sidebar">
             <nav class="sidebar-content">
                 <div class="accordion">
                     <div class="accordion-item">
@@ -29,85 +22,47 @@
                     </div>
                 </div>
             </nav>
-        </nav>
+        </div>
         <div class="logo">
             <a href="index.html">
                 <img src="assets/logo.png" alt="Ghost Logo" class="logo-img">
             </a>
         </div>
+        <div class="vertical-menu">
+            <ul>
+                <li><a href="index.html">Menú</a></li>
+                <li><a href="#promociones">Promociones</a></li>
+                <li><a href="#ubicaciones">Ubicaciones</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </div>
     </nav>
     <main>
-        <section id="hero">
-            <div class="logo">
-                <img src="assets/logo.png" alt="Ghost Logo" class="logo-img">
-            </div>
-            <div class="vertical-menu">
-                <ul>
-                    <li><a href="#menu">Menú</a></li>
-                    <li><a href="#promociones">Promociones</a></li>
-                    <li><a href="#ubicaciones">Ubicaciones</a></li>
-                    <li><a href="#contacto">Contacto</a></li>
-                </ul>
-            </div>
-            <div class="hero-content">
-                <h1>¡Bienvenido a Ghost!</h1>
-                <p>La mejor comida rápida de Chile</p>
-                <a href="menu.html" class="cta-button">Ver Menú</a>
-            </div>
-        </section>
-
-        <section class="menu-buttons-section">
-            <h2>¿Qué quieres comer hoy?</h2>
-            <div class="menu-buttons-container">
-                <a href="menu.html" class="category-btn">
+        <section class="menu-section">
+            <div class="menu-categories">
+                <button class="category-btn active" data-category="all">
                     <img src="./assets/hambuuurguesa.png" alt="Hamburguesas" class="category-img">
                     <span>Hamburguesas</span>
-                </a>
-                <a href="menu.html" class="category-btn">
+                </button>
+                <button class="category-btn" data-category="completos">
                     <img src="assets/ghostpleto.png" alt="Completos" class="category-img">
                     <span>Completos</span>
-                </a>
-                <a href="menu.html" class="category-btn">
+                </button>
+                <button class="category-btn" data-category="bebidas">
                     <img src="assets/bebida.png" alt="Bebidas" class="category-img">
                     <span>Bebidas</span>
-                </a>
-                <a href="menu.html" class="category-btn">
+                </button>
+                <button class="category-btn" data-category="postres">
                     <img src="assets/heladovainilla.png" alt="Postres" class="category-img">
                     <span>Postres</span>
-                </a>
-                <a href="menu.html" class="category-btn">
+                </button>
+                <button class="category-btn" data-category="acompanamientos">
                     <img src="assets/papas.png" alt="Acompañamientos" class="category-img">
                     <span>Acompañamientos</span>
-                </a>
-            </div>
-        </section>
-
-        <section id="contacto" class="contacto-section">
-            <h2>Contacto</h2>
-            <div class="contacto-container">
-                <div class="contacto-info">
-                    <div class="contacto-detalle">
-                        <h3>Reserva tu pedido</h3>
-                        <p>Teléfono: +56 9 1234 5678</p>
-                        <p>Email: contactoghost@gmail.com</p>
-                    </div>
-                    <div class="contacto-detalle">
-                        <h3>Horarios</h3>
-                        <p>Lunes a Domingo: 10:00 - 22:00</p>
-                    </div>
-                </div>
-                <div class="contacto-form">
-                    <form id="contact-form">
-                        <input type="text" placeholder="Nombre" required>
-                        <input type="email" placeholder="Email" required>
-                        <textarea placeholder="Mensaje" required></textarea>
-                        <button type="submit" class="submit-btn">Enviar Mensaje</button>
-                    </form>
-                </div>
+                </button>
             </div>
         </section>
     </main>
-
     <footer>
         <div class="footer-content">
             <div class="footer-section">
@@ -132,7 +87,6 @@
             </div>
         </div>
     </footer>
-
     <script src="script.js"></script>
 </body>
 </html>

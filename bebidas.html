@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bebidas - Ghost</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="icon" type="image/png" href="assets/favicon.png">
+</head>
+<body class="menu-page">
+    <nav class="top-bar">
+        <div class="sidebar">
+            <nav class="sidebar-content">
+                <div class="accordion">
+                    <div class="accordion-item">
+                        <button class="accordion-header">Sobre Nosotros</button>
+                        <div class="accordion-content">
+                            <p>Ghost es una cadena de comida rápida que combina la tradición chilena con la innovación moderna. Nuestros productos son elaborados con los mejores ingredientes locales, manteniendo la calidad y sabor que nos caracteriza.</p>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </div>
+        <div class="logo">
+            <a href="index.html">
+                <img src="assets/logo.png" alt="Ghost Logo" class="logo-img">
+            </a>
+        </div>
+        <div class="vertical-menu">
+            <ul>
+                <li><a href="index.html">Menú</a></li>
+                <li><a href="#promociones">Promociones</a></li>
+                <li><a href="#ubicaciones">Ubicaciones</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </div>
+    </nav>
+    <main>
+        <section class="menu-section">
+            <div class="menu-categories">
+                <a href="hamburguesas.html" class="category-btn" data-category="all">
+                    <img src="assets/hambuuurguesa.png" alt="Hamburguesas" class="category-img">
+                    <span>Hamburguesas</span>
+                </a>
+                <a href="ghostpletos.html" class="category-btn" data-category="ghostpletos">
+                    <img src="assets/ghostpleto.png" alt="Ghostpletos" class="category-img">
+                    <span>Ghostpletos</span>
+                </a>
+                <a href="bebidas.html" class="category-btn active" data-category="bebidas">
+                    <img src="assets/bebida.png" alt="Bebidas" class="category-img">
+                    <span>Bebidas</span>
+                </a>
+                <a href="postres.html" class="category-btn" data-category="postres">
+                    <img src="assets/heladovainilla.png" alt="Postres" class="category-img">
+                    <span>Postres</span>
+                </a>
+                <a href="acompanamientos.html" class="category-btn" data-category="acompanamientos">
+                    <img src="assets/papas.png" alt="Acompañamientos" class="category-img">
+                    <span>Acompañamientos</span>
+                </a>
+            </div>
+            <h2 class="especiales-title">Bebidas</h2>
+            <div class="menu-items-container">
+                <!-- Coca-Cola -->
+                <div class="menu-item">
+                    <div class="item-accordion">
+                        <button class="accordion-header">
+                            <div class="menu-item-img-container">
+                                <img src="assets/cocacola.png" alt="Coca-Cola" class="menu-item-img">
+                            </div>
+                            <div class="menu-item-title">
+                                <span>Coca-Cola</span>
+                                <i class="fas fa-chevron-down"></i>
+                            </div>
+                        </button>
+                        <div class="accordion-content">
+                            <p>Bebida gaseosa con sabor único y refrescante.</p>
+                            <div class="size-selector">
+                                <button class="size-btn active" data-size="pequeno" data-price="1.500">Pequeño (350ml)</button>
+                                <button class="size-btn" data-size="mediano" data-price="2.500">Mediano (500ml)</button>
+                                <button class="size-btn" data-size="grande" data-price="3.200">Grande (750ml)</button>
+                            </div>
+                            <p class="price">$2.500</p>
+                            <button class="add-to-cart">Añadir al carrito</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Pepsi -->
+                <div class="menu-item">
+                    <div class="item-accordion">
+                        <button class="accordion-header">
+                            <div class="menu-item-img-container">
+                                <img src="assets/pepsi.png" alt="Pepsi" class="menu-item-img">
+                            </div>
+                            <div class="menu-item-title">
+                                <span>Pepsi</span>
+                                <i class="fas fa-chevron-down"></i>
+                            </div>
+                        </button>
+                        <div class="accordion-content">
+                            <p>El sabor refrescante que todos aman.</p>
+                            <div class="size-selector">
+                                <button class="size-btn active" data-size="pequeno" data-price="1.300">Pequeño (350ml)</button>
+                                <button class="size-btn" data-size="mediano" data-price="2.300">Mediano (500ml)</button>
+                                <button class="size-btn" data-size="grande" data-price="3.000">Grande (750ml)</button>
+                            </div>
+                            <p class="price">$2.300</p>
+                            <button class="add-to-cart">Añadir al carrito</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Sprite -->
+                <div class="menu-item">
+                    <div class="item-accordion">
+                        <button class="accordion-header">
+                            <div class="menu-item-img-container">
+                                <img src="assets/sprite.png" alt="Sprite" class="menu-item-img">
+                            </div>
+                            <div class="menu-item-title">
+                                <span>Sprite</span>
+                                <i class="fas fa-chevron-down"></i>
+                            </div>
+                        </button>
+                        <div class="accordion-content">
+                            <p>El sabor cítrico y refrescante perfecto para acompañar tu comida.</p>
+                            <div class="size-selector">
+                                <button class="size-btn active" data-size="pequeno" data-price="1.300">Pequeño (350ml)</button>
+                                <button class="size-btn" data-size="mediano" data-price="2.300">Mediano (500ml)</button>
+                                <button class="size-btn" data-size="grande" data-price="3.000">Grande (750ml)</button>
+                            </div>
+                            <p class="price">$2.300</p>
+                            <button class="add-to-cart">Añadir al carrito</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Fanta -->
+                <div class="menu-item">
+                    <div class="item-accordion">
+                        <button class="accordion-header">
+                            <div class="menu-item-img-container">
+                                <img src="assets/fanta.png" alt="Fanta" class="menu-item-img">
+                            </div>
+                            <div class="menu-item-title">
+                                <span>Fanta</span>
+                                <i class="fas fa-chevron-down"></i>
+                            </div>
+                        </button>
+                        <div class="accordion-content">
+                            <p>El sabor dulce y refrescante de la naranja en cada sorbo.</p>
+                            <div class="size-selector">
+                                <button class="size-btn active" data-size="pequeno" data-price="1.300">Pequeño (350ml)</button>
+                                <button class="size-btn" data-size="mediano" data-price="2.300">Mediano (500ml)</button>
+                                <button class="size-btn" data-size="grande" data-price="3.000">Grande (750ml)</button>
+                            </div>
+                            <p class="price">$2.300</p>
+                            <button class="add-to-cart">Añadir al carrito</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Jugos y Aguas Section -->
+            <h2 class="especiales-title">Jugos y Aguas</h2>
+            <div class="menu-items-container">
+                <!-- Jugo de Mango -->
+                <div class="menu-item">
+                    <div class="item-accordion">
+                        <button class="accordion-header">
+                            <div class="menu-item-img-container">
+                                <img src="./assets/mango.png" alt="Jugo de Mango" class="menu-item-img">
+                            </div>
+                            <div class="menu-item-title">
+                                <span>Jugo de Mango</span>
+                                <i class="fas fa-chevron-down"></i>
+                            </div>
+                        </button>
+                        <div class="accordion-content">
+                            <p>Refrescante jugo natural de mango, endulzado al gusto.</p>
+                            <div class="size-selector">
+                                <button class="size-btn active" data-size="vaso" data-price="2.800">Vaso (350ml)</button>
+                                <button class="size-btn" data-size="jarra" data-price="4.500">Jarra (700ml)</button>
+                                <button class="size-btn" data-size="jarrafa" data-price="6.500">Jarrafa (1.5L)</button>
+                            </div>
+                            <p class="price">$2.800</p>
+                            <button class="add-to-cart">Añadir al carrito</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Jugo de Naranja -->
+                <div class="menu-item">
+                    <div class="item-accordion">
+                        <button class="accordion-header">
+                            <div class="menu-item-img-container">
+                                <img src="./assets/naranja.png" alt="Jugo de Naranja" class="menu-item-img">
+                            </div>
+                            <div class="menu-item-title">
+                                <span>Jugo de Naranja</span>
+                                <i class="fas fa-chevron-down"></i>
+                            </div>
+                        </button>
+                        <div class="accordion-content">
+                            <p>Jugo natural recién exprimido de naranjas frescas.</p>
+                            <div class="size-selector">
+                                <button class="size-btn active" data-size="vaso" data-price="2.500">Vaso (350ml)</button>
+                                <button class="size-btn" data-size="jarra" data-price="4.000">Jarra (700ml)</button>
+                                <button class="size-btn" data-size="jarrafa" data-price="5.800">Jarrafa (1.5L)</button>
+                            </div>
+                            <p class="price">$2.500</p>
+                            <button class="add-to-cart">Añadir al carrito</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Jugo de Frutilla -->
+                <div class="menu-item">
+                    <div class="item-accordion">
+                        <button class="accordion-header">
+                            <div class="menu-item-img-container">
+                                <img src="./assets/frutilla.png" alt="Jugo de Frutilla" class="menu-item-img">
+                            </div>
+                            <div class="menu-item-title">
+                                <span>Jugo de Frutilla</span>
+                                <i class="fas fa-chevron-down"></i>
+                            </div>
+                        </button>
+                        <div class="accordion-content">
+                            <p>Delicioso jugo natural de frutillas frescas.</p>
+                            <div class="size-selector">
+                                <button class="size-btn active" data-size="vaso" data-price="3.000">Vaso (350ml)</button>
+                                <button class="size-btn" data-size="jarra" data-price="4.800">Jarra (700ml)</button>
+                                <button class="size-btn" data-size="jarrafa" data-price="7.000">Jarrafa (1.5L)</button>
+                            </div>
+                            <p class="price">$3.000</p>
+                            <button class="add-to-cart">Añadir al carrito</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Jugo de Piña -->
+                <div class="menu-item">
+                    <div class="item-accordion">
+                        <button class="accordion-header">
+                            <div class="menu-item-img-container">
+                                <img src="./assets/pina.png" alt="Jugo de Piña" class="menu-item-img">
+                            </div>
+                            <div class="menu-item-title">
+                                <span>Jugo de Piña</span>
+                                <i class="fas fa-chevron-down"></i>
+                            </div>
+                        </button>
+                        <div class="accordion-content">
+                            <p>Refrescante jugo natural de piña, perfecto para acompañar tus comidas.</p>
+                            <div class="size-selector">
+                                <button class="size-btn active" data-size="vaso" data-price="2.700">Vaso (350ml)</button>
+                                <button class="size-btn" data-size="jarra" data-price="4.300">Jarra (700ml)</button>
+                                <button class="size-btn" data-size="jarrafa" data-price="6.200">Jarrafa (1.5L)</button>
+                            </div>
+                            <p class="price">$2.700</p>
+                            <button class="add-to-cart">Añadir al carrito</button>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Ghost</h3>
+                <p>&copy; 2025 Ghost. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+    <script src="menu-accordion.js"></script>
+</body>
+</html>

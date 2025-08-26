@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Acompañamientos - Ghost</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="icon" type="image/png" href="assets/favicon.png">
+</head>
+<body class="menu-page">
+    <nav class="top-bar">
+        <div class="sidebar">
+            <nav class="sidebar-content">
+                <div class="accordion">
+                    <div class="accordion-item">
+                        <button class="accordion-header">Sobre Nosotros</button>
+                        <div class="accordion-content">
+                            <p>Ghost es una cadena de comida rápida que combina la tradición chilena con la innovación moderna. Nuestros productos son elaborados con los mejores ingredientes locales, manteniendo la calidad y sabor que nos caracteriza.</p>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </div>
+        <div class="logo">
+            <a href="index.html">
+                <img src="assets/logo.png" alt="Ghost Logo" class="logo-img">
+            </a>
+        </div>
+        <div class="vertical-menu">
+            <ul>
+                <li><a href="index.html">Menú</a></li>
+                <li><a href="#promociones">Promociones</a></li>
+                <li><a href="#ubicaciones">Ubicaciones</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </div>
+    </nav>
+    <main>
+        <section class="menu-section">
+            <div class="menu-categories">
+                <a href="hamburguesas.html" class="category-btn" data-category="all">
+                    <img src="assets/hambuuurguesa.png" alt="Hamburguesas" class="category-img">
+                    <span>Hamburguesas</span>
+                </a>
+                <a href="ghostpletos.html" class="category-btn" data-category="ghostpletos">
+                    <img src="assets/ghostpleto.png" alt="Ghostpletos" class="category-img">
+                    <span>Ghostpletos</span>
+                </a>
+                <a href="bebidas.html" class="category-btn" data-category="bebidas">
+                    <img src="assets/bebida.png" alt="Bebidas" class="category-img">
+                    <span>Bebidas</span>
+                </a>
+                <a href="postres.html" class="category-btn" data-category="postres">
+                    <img src="assets/heladovainilla.png" alt="Postres" class="category-img">
+                    <span>Postres</span>
+                </a>
+                <a href="acompanamientos.html" class="category-btn active" data-category="acompanamientos">
+                    <img src="assets/papas.png" alt="Acompañamientos" class="category-img">
+                    <span>Acompañamientos</span>
+                </a>
+            </div>
+            <h2 class="especiales-title">Acompañamientos</h2>
+            <div class="menu-items-container">
+                <!-- Papas Fritas -->
+                <div class="menu-item">
+                    <div class="item-accordion">
+                        <button class="accordion-header">
+                            <div class="menu-item-img-container">
+                                <img src="./assets/papas.png" alt="Papas Fritas" class="menu-item-img">
+                            </div>
+                            <div class="menu-item-title">
+                                <span>Papas Fritas</span>
+                                <i class="fas fa-chevron-down"></i>
+                            </div>
+                        </button>
+                        <div class="accordion-content">
+                            <p>Crujientes papas fritas doradas, sazonadas al estilo Ghost.</p>
+                            <div class="size-selector">
+                                <button class="size-btn active" data-size="pequeno" data-price="2.500">Pequeñas</button>
+                                <button class="size-btn" data-size="grande" data-price="3.500">Grandes</button>
+                            </div>
+                            <p class="price">$2.500</p>
+                            <button class="add-to-cart">Añadir al carrito</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Nuggets -->
+                <div class="menu-item">
+                    <div class="item-accordion">
+                        <button class="accordion-header">
+                            <div class="menu-item-img-container">
+                                <img src="./assets/nuggets.png" alt="Nuggets" class="menu-item-img">
+                            </div>
+                            <div class="menu-item-title">
+                                <span>Nuggets</span>
+                                <i class="fas fa-chevron-down"></i>
+                            </div>
+                        </button>
+                        <div class="accordion-content">
+                            <p>Deliciosos nuggets de pollo crujientes por fuera y jugosos por dentro.</p>
+                            <div class="size-selector">
+                                <button class="size-btn active" data-size="6pz" data-price="3.000">6 unidades</button>
+                                <button class="size-btn" data-size="12pz" data-price="5.000">12 unidades</button>
+                            </div>
+                            <p class="price">$3.000</p>
+                            <button class="add-to-cart">Añadir al carrito</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Aros de Cebolla -->
+                <div class="menu-item">
+                    <div class="item-accordion">
+                        <button class="accordion-header">
+                            <div class="menu-item-img-container">
+                                <img src="./assets/aroscebolla.png" alt="Aros de Cebolla" class="menu-item-img">
+                            </div>
+                            <div class="menu-item-title">
+                                <span>Aros de Cebolla</span>
+                                <i class="fas fa-chevron-down"></i>
+                            </div>
+                        </button>
+                        <div class="accordion-content">
+                            <p>Crujientes aros de cebolla rebozados, perfectos para compartir.</p>
+                            <div class="size-selector">
+                                <button class="size-btn active" data-size="pequeno" data-price="2.800">Pequeños</button>
+                                <button class="size-btn" data-size="grande" data-price="4.000">Grandes</button>
+                            </div>
+                            <p class="price">$2.800</p>
+                            <button class="add-to-cart">Añadir al carrito</button>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Empanaditas -->
+                <div class="menu-item">
+                    <div class="item-accordion">
+                        <button class="accordion-header">
+                            <div class="menu-item-img-container">
+                                <img src="./assets/empanadas.png" alt="Empanaditas" class="menu-item-img">
+                            </div>
+                            <div class="menu-item-title">
+                                <span>Empanaditas</span>
+                                <i class="fas fa-chevron-down"></i>
+                            </div>
+                        </button>
+                        <div class="accordion-content">
+                            <p>Deliciosas empanaditas caseras rellenas de tu elección.</p>
+                            <div class="size-selector">
+                                <button class="size-btn active" data-size="3pz" data-price="3.500">3 unidades</button>
+                                <button class="size-btn" data-size="6pz" data-price="6.000">6 unidades</button>
+                            </div>
+                            <p class="price">$3.500</p>
+                            <button class="add-to-cart">Añadir al carrito</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Ghost</h3>
+                <p>&copy; 2025 Ghost. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+    <script src="menu-accordion.js"></script>
+</body>
+</html>

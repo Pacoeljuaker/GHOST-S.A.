@@ -171,7 +171,7 @@ document.addEventListener('DOMContentLoaded', function() {
         button.addEventListener('click', () => {
             const item = button.closest('.menu-item');
             const itemName = item.querySelector('h3').textContent;
-            alert(`¡${itemName} ha sido añadido al carrito!`);
+            alert(`¡Esta función estará disponible pronto! ;)`);
         });
     });
 });

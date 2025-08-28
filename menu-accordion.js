@@ -58,7 +58,7 @@ document.addEventListener('DOMContentLoaded', function() {
             const itemContainer = this.closest('.menu-item');
             const itemName = itemContainer.querySelector('.accordion-header span').textContent;
             const selectedSize = itemContainer.querySelector('.size-btn.active');
-            let message = `¡${itemName} ha sido añadido al carrito!`;
+            let message = `¡Esta función estará disponible pronto! ;)`;
             
             if (selectedSize) {
                 const sizeText = selectedSize.textContent.split('(')[0].trim();

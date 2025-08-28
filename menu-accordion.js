@@ -62,7 +62,7 @@ document.addEventListener('DOMContentLoaded', function() {
             
             if (selectedSize) {
                 const sizeText = selectedSize.textContent.split('(')[0].trim();
-                message = `¡${itemName} (${sizeText}) ha sido añadido al carrito!`;
+                message = `¡Esta función estará disponible pronto! ;)`;
             }
             
             alert(message);

@@ -20,12 +20,8 @@
         <nav class="sidebar">
             <nav class="sidebar-content">
                 <div class="sidebar-links">
-                    <a href="hamburguesas.html" class="sidebar-button">Hamburguesas</a>
-                    <a href="acompanamientos.html" class="sidebar-button">Acompañamientos</a>
-                    <a href="bebidas.html" class="sidebar-button">Bebidas</a>
-                    <a href="postres.html" class="sidebar-button active">Postres</a>
-                    <a href="ghostpletos.html" class="sidebar-button">Ghostpletos</a>
                     <a href="sobrenosotros.html" class="sidebar-button">Sobre Nosotros</a>
+                    <a href="terminosycondiciones.html" class="sidebar-button">Términos y Condiciones</a>
                 </div>
             </nav>
         </nav>
@@ -67,14 +63,115 @@
                     <span>Acompañamientos</span>
                 </a>
             </div>
-            <h2 class="especiales-title">Postres</h2>
+            
+            <h2 class="especiales-title">Nuestros Postres</h2>
             <div class="menu-items-container">
-                <!-- Add your postres items here -->
+                <!-- Helado de Chocolate -->
                 <div class="menu-item">
-                    <button class="menu-item-btn">
-                        <img src="assets/heladovainilla.png" alt="Helado" class="menu-item-img">
-                        <span>Helado</span>
-                    </button>
+                    <div class="item-accordion">
+                        <button class="accordion-header">
+                            <div class="menu-item-img-container">
+                                <img src="assets/chocolate.png" alt="Helado de Chocolate" class="menu-item-img">
+                            </div>
+                            <div class="menu-item-title">
+                                <span>Helado de Chocolate</span>
+                            </div>
+                            <div class="accordion-arrow">
+                                <i class="fas fa-chevron-down"></i>
+                            </div>
+                        </button>
+                        <div class="accordion-content">
+                            <p>Delicioso helado de chocolate cremoso, perfecto para los amantes del cacao.</p>
+                            <div class="size-selector">
+                                <button class="size-btn active" data-size="pequeno" data-price="3500">Pequeño</button>
+                                <button class="size-btn" data-size="mediano" data-price="4500">Mediano</button>
+                                <button class="size-btn" data-size="grande" data-price="5500">Grande</button>
+                            </div>
+                            <p class="price">$3.500</p>
+                            <button class="add-to-cart">Añadir al carrito</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Helado de Vainilla -->
+                <div class="menu-item">
+                    <div class="item-accordion">
+                        <button class="accordion-header">
+                            <div class="menu-item-img-container">
+                                <img src="assets/heladovainilla.png" alt="Helado de Vainilla" class="menu-item-img">
+                            </div>
+                            <div class="menu-item-title">
+                                <span>Helado de Vainilla</span>
+                            </div>
+                            <div class="accordion-arrow">
+                                <i class="fas fa-chevron-down"></i>
+                            </div>
+                        </button>
+                        <div class="accordion-content">
+                            <p>Clásico helado de vainilla, suave y cremoso con el auténtico sabor a vainilla.</p>
+                            <div class="size-selector">
+                                <button class="size-btn active" data-size="pequeno" data-price="3500">Pequeño</button>
+                                <button class="size-btn" data-size="mediano" data-price="4500">Mediano</button>
+                                <button class="size-btn" data-size="grande" data-price="5500">Grande</button>
+                            </div>
+                            <p class="price">$3.500</p>
+                            <button class="add-to-cart">Añadir al carrito</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Helado de Frutilla -->
+                <div class="menu-item">
+                    <div class="item-accordion">
+                        <button class="accordion-header">
+                            <div class="menu-item-img-container">
+                                <img src="assets/heladofrutilla.png" alt="Helado de Frutilla" class="menu-item-img">
+                            </div>
+                            <div class="menu-item-title">
+                                <span>Helado de Frutilla</span>
+                            </div>
+                            <div class="accordion-arrow">
+                                <i class="fas fa-chevron-down"></i>
+                            </div>
+                        </button>
+                        <div class="accordion-content">
+                            <p>Refrescante helado de frutilla natural, dulce y con trozos de fruta.</p>
+                            <div class="size-selector">
+                                <button class="size-btn active" data-size="pequeno" data-price="3500">Pequeño</button>
+                                <button class="size-btn" data-size="mediano" data-price="4500">Mediano</button>
+                                <button class="size-btn" data-size="grande" data-price="5500">Grande</button>
+                            </div>
+                            <p class="price">$3.500</p>
+                            <button class="add-to-cart">Añadir al carrito</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Helado Napolitano -->
+                <div class="menu-item">
+                    <div class="item-accordion">
+                        <button class="accordion-header">
+                            <div class="menu-item-img-container">
+                                <img src="assets/heladonapolitano.png" alt="Helado Napolitano" class="menu-item-img">
+                            </div>
+                            <div class="menu-item-title">
+                                <span>Helado Napolitano</span>
+                            </div>
+                            <div class="accordion-arrow">
+                                <i class="fas fa-chevron-down"></i>
+                            </div>
+                        </button>
+                        <div class="accordion-content">
+                            <p>La combinación perfecta: chocolate, vainilla y frutilla en un solo helado.</p>
+                            <div class="size-selector">
+                                <button class="size-btn active" data-size="pequeno">Pequeño</button>
+                                <button class="size-btn" data-size="mediano">Mediano</button>
+                                <button class="size-btn" data-size="grande">Grande</button>
+                            </div>
+                            <p class="price">$4.000</p>
+                            <button class="add-to-cart">Añadir al carrito</button>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
@@ -82,12 +179,30 @@
     <footer>
         <div class="footer-content">
             <div class="footer-section">
+                <h3>Síguenos</h3>
+                <div class="social-links">
+                    <a><i class="fab fa-facebook"></i> @ghostcl</a>
+                    <a><i class="fab fa-instagram"></i> @ghostcl</a>
+                    <a><img src="assets/xlogo.png" alt="X" class="x-logo"> @ghostcl</a>
+                </div>
+            </div>
+            <div class="footer-section">
+                <h3>Información</h3>
+                <ul>
+                    <li><a href="terminosycondiciones.html">Términos y Condiciones</a></li>
+                    <li><a href="terminosycondiciones.html#privacidad">Política de Privacidad</a></li>
+                    <li><a href="#">Trabaja con Nosotros</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
                 <h3>Ghost</h3>
                 <p>&copy; 2025 Ghost. Todos los derechos reservados.</p>
+                <p>Visítanos en Monterrey n°669, Monte Patria</p>
             </div>
         </div>
     </footer>
     <script src="script.js"></script>
     <script src="menu-accordion.js"></script>
+    <script src="postres.js"></script>
 </body>
 </html>
